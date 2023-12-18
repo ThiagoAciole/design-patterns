@@ -6,7 +6,7 @@ class Product {
   }
 
   show(): void {
-    console.log(`Product parts: ${this.parts.join(", ")}`);
+    console.log(`Product: ${this.parts.join(", ")}`);
   }
 }
 
@@ -20,11 +20,11 @@ class ConcreteBuilder extends Builder {
   private product: Product = new Product();
 
   buildPart1(): void {
-    this.product.addPart("Part1");
+    this.product.addPart("Produto 1");
   }
 
   buildPart2(): void {
-    this.product.addPart("Part2");
+    this.product.addPart("Cod: 999999");
   }
 
   getResult(): Product {
